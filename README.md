@@ -54,7 +54,7 @@ Oracle Databaseのクラウドサービス Autonomous Databaseはあらゆるワ
 ### 事前準備) Autonomous DatabaseインスタンスとOMLユーザーを作成する
 https://www.youtube.com/watch?v=6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers
 
-
+[![](https://img.youtube.com/vi/6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers/0.jpg)](https://www.youtube.com/watch?v=6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers)
 
 **動画概説**
 このフェーズは大きく分けて3つの作業があります。
