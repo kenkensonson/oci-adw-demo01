@@ -52,9 +52,9 @@ Oracle Databaseのクラウドサービス Autonomous Databaseはあらゆるワ
 以降、各ステップ毎に動画と、その概説やコマンドを記載します。
 
 ### 事前準備) Autonomous DatabaseインスタンスとOMLユーザーを作成する
-https://www.youtube.com/watch?v=6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers
 
-[![](https://img.youtube.com/vi/6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers/0.jpg)](https://www.youtube.com/watch?v=6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers)
+**動画(Youtube)**
+https://www.youtube.com/watch?v=6CtC5mgCWEM&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&t=1s&ab_channel=JapanOracleDevelopers
 
 **動画概説**
 このフェーズは大きく分けて3つの作業があります。
@@ -84,11 +84,13 @@ END;
 以上、3つの作業でこのフェーズは完了です。
 
 ### Step 1) 学習用のデータを Autonomous Database にロードする
+**動画(Youtube)**
 https://www.youtube.com/watch?v=V0bdw8H2qmA&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=2&ab_channel=JapanOracleDevelopers
 
 **動画概説**
 学習用のCSVファイルをAutonomous Databaseにロードし、表を作成します。(OMLではこの表を内部的にPandasのDataFrameに変換して処理を行っています。)
-<ol><li>CSVファイルを[ダウンロード](https://github.com/oracle-japan/oci-adwml-demo01/archive/refs/heads/main.zip)する。
+
+<ol><li>CSVファイル https://github.com/oracle-japan/oci-adwml-demo01/archive/refs/heads/main.zip からダウンロードする。
 ダウンロードしたZIPファイルを解凍すると下記2つのファイルがあります。
 
 - boston_house_prices.csv : 学習用のデータ
@@ -103,6 +105,7 @@ https://www.youtube.com/watch?v=V0bdw8H2qmA&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreV
 以上、2つの作業でこのフェーズは完了です。
 
 ### Step 2) 予測モデルを構築する
+**動画(Youtube)**
 https://www.youtube.com/watch?v=Iv9qsTOAIjI&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=3&ab_channel=JapanOracleDevelopers
 
 **動画概説**
@@ -120,6 +123,7 @@ AutoML UIのインターフェースから、ADWにロードされたデータ(�
 </li><li>モデル構築はGUIベースで簡単に実行できますが、予測処理はプログラムを書く必要があります。</li></ol>
 
 ### Step 3) 予測用データをロードし、予測処理を実行する
+**動画(Youtube)**
 https://www.youtube.com/watch?v=38LFwhc9zko&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=4&ab_channel=JapanOracleDevelopers
 
 
@@ -161,11 +165,13 @@ oml.create(prediction, table = 'BOSTON_HOUSE_PRICES_PRED')
 以上、2つの作業でこのフェーズは完了です。
 
 ### Step 4) 予測結果をレポートするためのウェブアプリケーションを開発する
+**動画(Youtube)**
 https://www.youtube.com/watch?v=MLIrrwTOO6w&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=5&ab_channel=JapanOracleDevelopers
 
 APEXを使って、予測結果をレポートし、そのレポートから簡単な分析ができるウェブアプリケーションを開発します。こちらもプログラムなしのノーコード開発の例です。
 
 ### Step 5) 予測モデルをデプロイし、アプリケーションからAPIコール(REST)できるようにする
+**動画(Youtube)**
 https://www.youtube.com/watch?v=bUxFxKmyrHI&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=6&ab_channel=JapanOracleDevelopers
 
 **動画概説**
@@ -235,6 +241,7 @@ Connection: keep-alive
 
 
 ### Step 6) ノートブック(ソースコード)をバージョニングする
+**動画(Youtube)**
 https://www.youtube.com/watch?v=p3nLgYfyMkE&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=7&ab_channel=JapanOracleDevelopers
 
 ソースコードのバージョニング機能です。任意の時点でのプログラムにバージョンを付与し、編集後、どの時点のソースコードにもリストアできるようにする機能です。
@@ -242,6 +249,7 @@ https://www.youtube.com/watch?v=p3nLgYfyMkE&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreV
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/109260/fd84b714-aa27-5203-160b-7d69f4a5a996.png)
 
 ### Step 7) ノートブックのスケジューリング実行を設定する
+**動画(Youtube)**
 https://www.youtube.com/watch?v=3Kcq2dutYS4&list=PL8x2FJpi0g-tkB8X5dmNC3TribgreVwwR&index=8&ab_channel=JapanOracleDevelopers
 
 ノートブックに書いたプログラムをスケジューリング実行する機能です。学習処理の夜間実行などをスケジューリングすることが可能です。その他、機械学習のワークフローのあらゆるフェーズを自動実行できるようにします。
